@@ -1,0 +1,28 @@
+/* green btn start */
+.grnbtn{
+    background-color: #44bb11 !important;
+    border: 0px !important ;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important ;
+}
+/* green btn end */
+
+.blulink{
+    color: #0d6efd !important ;
+    text-decoration: none !important;
+    cursor: pointer !important;
+}
+
+.scrbtn{
+    cursor: pointer !important;
+}
+
+a{
+    cursor: pointer !important;
+}
+
+
+
+h5{
+    word-spacing: 0.3px ;
+    letter-spacing: 1.4px;
+}
