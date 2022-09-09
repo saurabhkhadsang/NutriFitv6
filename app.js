@@ -348,7 +348,7 @@ const mailer = (email, otp, username) => {
 
     let transporter = nodemailer.createTransport(sgTransport({
         auth: {
-            api_key: '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'
+            api_key: process.env.MAILKEY
         }
     }))
 
@@ -369,7 +369,7 @@ const mailer = (email, otp, username) => {
             <a href="" style="font-size:1.4em;color: #00466a;text-decoration:none;font-weight:600">NutriFit</a>
           </div>
           <p style="font-size:1.1em">Hi,</p>
-          <p>Thank you for choosing NutriFit. Use the following OTP to complete your Sign Up procedures. for username <h3>${username}</h3> . OTP is valid for 5 minutes</p>
+          <p>Thank you for choosing NutriFit. Use the following OTP to complete your Sign Up procedures. for username <h3>${username}</h3> . OTP is valid for 10 minutes</p>
           <h2 style="background: #00466a;margin: 0 auto;width: max-content;padding: 0 10px;color: #fff;border-radius: 4px;">${otp}</h2>
           <p style="font-size:0.9em;">Regards,<br />NutriFit</p>
           <hr style="border:none;border-top:1px solid #eee" />
@@ -397,7 +397,7 @@ const mailerforget = (email, otp, username) => {
 
     let transporter = nodemailer.createTransport(sgTransport({
         auth: {
-            api_key: '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'
+            api_key: process.env.MAILKEY
         }
     }))
 
@@ -414,7 +414,7 @@ const mailerforget = (email, otp, username) => {
             <a href="" style="font-size:1.4em;color: #00466a;text-decoration:none;font-weight:600">NutriFit</a>
           </div>
           <p style="font-size:1.1em">Hi,</p>
-          <p>Thank you for choosing NutriFit. Use the following OTP to Reset your password. for username <h3>${username}</h3> . OTP is valid for 5 minutes</p>
+          <p>Thank you for choosing NutriFit. Use the following OTP to Reset your password. for username <h3>${username}</h3> . OTP is valid for 10 minutes</p>
           <h2 style="background: #00466a;margin: 0 auto;width: max-content;padding: 0 10px;color: #fff;border-radius: 4px;">${otp}</h2>
           <p style="font-size:0.9em;">Regards,<br />NutriFit</p>
           <hr style="border:none;border-top:1px solid #eee" />
